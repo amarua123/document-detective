@@ -8,7 +8,8 @@ Classes in the package:-
 ====================================================================
 Classes with @annotations.ClassDocument:
  |===>com.document.detective.detective.Teacher
-  |===>com.document.detective.detective.College
+  |===>com.document.detective.detective.Book
+   |===>com.document.detective.detective.College
 
 ====================================================================
 Methods with @annotations.MethodDocument:
@@ -17,6 +18,12 @@ Methods with @annotations.MethodDocument:
 
 ====================================================================
 Classes with javadoc:
+Class: com.document.detective.detective.Subject
+Javadoc:
+
+This class will keep the subject names
+ 
+--------------------------------------------------------------------
 Class: com.document.detective.detective.Book
 Javadoc:
 
@@ -35,11 +42,9 @@ Javadoc:
 ====================================================================
 Class with annotation but no javadoc:
  |===>com.document.detective.detective.Teacher
-  |===>com.document.detective.detective.Subject
-   |===>com.document.detective.detective.DocumentDetectiveApplication
-    |===>com.document.detective.detective.College
+  |===>com.document.detective.detective.College
 
 ====================================================================
 Class with javadoc but no annotation:
- |===>com.document.detective.detective.Book
+ |===>com.document.detective.detective.Subject
 

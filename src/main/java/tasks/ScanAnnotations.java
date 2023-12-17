@@ -86,7 +86,7 @@ public class ScanAnnotations {
                             if(!annotationClasses.contains(clazz)){
                                 javadocClassWithoutAnnotation.add(clazz);
                             }
-                        } else {
+                        } else if(annotationClasses.contains(clazz)) {
                             annotationClassWithoutJavadoc.add(clazz);
                         }
                     });
@@ -131,11 +131,9 @@ public class ScanAnnotations {
             }
             System.out.println();
 
-
         } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 
     private static Class<? extends Annotation> getClassForName(String className){
@@ -146,10 +144,6 @@ public class ScanAnnotations {
         }
     }
     private static String getNSpace(int n){
-        StringBuilder sb = new StringBuilder();
-        for(int i = 0; i < n; i++){
-            sb.append(" ");
-        }
-        return sb.toString();
+        return " ".repeat(Math.max(1, n));
     }
 }
