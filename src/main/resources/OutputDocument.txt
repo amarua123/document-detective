@@ -1,0 +1,45 @@
+Classes in the package:-
+ |===>com.document.detective.detective.Book
+  |===>com.document.detective.detective.College
+   |===>com.document.detective.detective.DocumentDetectiveApplication
+    |===>com.document.detective.detective.Subject
+     |===>com.document.detective.detective.Teacher
+
+====================================================================
+Classes with @annotations.ClassDocument:
+ |===>com.document.detective.detective.Teacher
+  |===>com.document.detective.detective.College
+
+====================================================================
+Methods with @annotations.MethodDocument:
+ |===>public java.lang.String com.document.detective.detective.College.getCollageSate()
+  |===>public java.lang.String com.document.detective.detective.Teacher.getName()
+
+====================================================================
+Classes with javadoc:
+Class: com.document.detective.detective.Book
+Javadoc:
+
+*    This class will hold all the book information
+
+--------------------------------------------------------------------
+====================================================================
+Methods with javadoc:
+Method: public String getCollageSate()
+Javadoc:
+
+     * This Method only return a static value WB
+     
+--------------------------------------------------------------------
+
+====================================================================
+Class with annotation but no javadoc:
+ |===>com.document.detective.detective.Teacher
+  |===>com.document.detective.detective.Subject
+   |===>com.document.detective.detective.DocumentDetectiveApplication
+    |===>com.document.detective.detective.College
+
+====================================================================
+Class with javadoc but no annotation:
+ |===>com.document.detective.detective.Book
+
